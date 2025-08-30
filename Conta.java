@@ -1,12 +1,12 @@
 public class Conta {
     private String titular;
-    private int numero;
+    private int numeroID;
     private double saldo;
 
     // CONSTRUTOR
-    public Conta(String titular, int numero, double saldo) {
+    public Conta(String titular, int numeroID, double saldo) {
         this.titular = titular;
-        this.numero = numero;
+        this.numeroID = numeroID;
         this.saldo = saldo;
     }
 
@@ -32,7 +32,7 @@ public class Conta {
 
     public void exibirSaldo() {
         System.out.println("Titular: " + titular);
-        System.out.println("Número da conta: " + numero);
+        System.out.println("Número da conta: " + numeroID);
         System.out.printf("Saldo atual: R$%.2f\n", saldo);
     }
 }
